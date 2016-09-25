@@ -99,7 +99,7 @@ void draw() {
     speed2Y = -speed2Y;
   }
   
-  //
+  //Make colors change when clicked in center
   
   if (clickablePressed) {
     println("true");
