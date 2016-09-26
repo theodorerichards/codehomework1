@@ -94,3 +94,9 @@ void draw() {
   }
 }
 
+void mousePressed() {
+  //squares speed up and slow down when clicked
+  speedX += 0.5;
+  speed2Y += 0.5;
+  }
+
