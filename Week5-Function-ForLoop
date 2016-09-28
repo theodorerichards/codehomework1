@@ -1,0 +1,32 @@
+void setup() {
+  size(600,600);
+  
+}
+
+void draw() {
+  background(200);
+  int x = 50;
+  int y = 50;
+  
+  //while (x < width) { 
+  //drawClockAtTen(x, y, 100, #637ae6);
+  //x+=100;
+  //}
+  
+  for (x = 50; x < width; x+=100) {
+    drawClockAtTen(x, y, 100, #637ae6);
+  }
+  
+  
+}
+
+void drawClockAtTen(int x, int y, int siz, int col) {
+  fill(col);
+  noStroke();
+  ellipse(x, y, siz, siz);
+  stroke(255);
+  line(x, y, x-35, y-35);
+  fill(255);
+  text("10", x-35, y-35);
+  
+}
