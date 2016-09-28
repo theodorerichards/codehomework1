@@ -1,0 +1,40 @@
+void setup() {
+  size(640,640);
+  textMode(CENTER);
+}
+
+void draw() {
+  background(200);
+  int x = 40;
+  int y = 40;
+  
+  //while (x < width) { 
+  //drawClockAtTen(x, y, 100, #637ae6);
+  //x+=100;
+  //}
+  
+  for (x = 40; x < width; x+=120) {
+    for (y = 40; y < height; y+=80) {
+    
+    float d = dist(mouseX, mouseY, x, y);
+    float siz = map(d, 0, width/2, 100, 1);
+    drawVenDiagram(x, y, siz, #637ae6, #912232);
+    }
+    
+  }
+  
+  
+}
+
+void drawVenDiagram(int x, int y, float siz, int col1, int col2) {
+  fill(col1);
+  noStroke();
+  ellipse(x, y, siz, siz);
+  fill(col2);
+  noStroke();
+  ellipse(x+50, y, siz, siz);
+  fill(255);
+  textSize(siz/2);
+  text("H2O", x-siz/4, y+siz/4);
+  
+}
