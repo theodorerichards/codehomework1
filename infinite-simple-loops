@@ -1,0 +1,35 @@
+void setup() {
+  //infinite loops in comment
+  
+  //int infiniteWhile = 25;
+  //while (infiniteWhile > 24) {
+  //  println("While Loop is Infinite!");
+  //  infiniteWhile++;
+  //}
+  
+  //for (int infiniteFor = 50; infiniteFor > 49; infiniteFor++) {
+  //  println("For Loop is Infinite!");
+  //}
+  
+  float age = 50;
+  while (age < 60) {
+    println("I am " + age + " years old!");
+    age++;
+  }
+  
+  int population = 0;
+  while (population < 10000000) {
+    println(population + " people live in NYC.");
+    population+=1000000;
+  }
+  
+  for (float temp = 75; temp > 55; temp-=2) {
+    println("It's " + temp + " degrees outside.");
+  }
+  
+}
+
+void draw() {
+  
+  
+}
